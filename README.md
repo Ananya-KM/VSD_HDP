@@ -1,6 +1,7 @@
 # SFAL_VSD
 ## DAY 0
-</p>
+
+ ![Screenshot (3)](https://github.com/user-attachments/assets/e300bcc1-e8d9-46ff-a523-9ec1f3caf14e)
 
 ### 1. **Chip Modeling**
 - **Define the Chip:** Start by writing a model in C that describes how the chip should behave. This helps make sure the idea works before building it.
