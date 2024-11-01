@@ -71,4 +71,39 @@ To see the transitions of particular input
 ![WhatsApp Image 2024-10-31 at 11 59 31 PM (12)](https://github.com/user-attachments/assets/cf625cc2-c8b1-44c9-ac5a-013a508a7cf1)
 ![WhatsApp Image 2024-10-31 at 11 59 31 PM (11)](https://github.com/user-attachments/assets/cbc67ed6-d2ae-4a1f-8079-322028893af9)
 
+# Introduction to Yosys
+</p> It's an open-source tool that converts Verilog designs into gate-level representations for digital logic synthesis. 
+
+<img width="640" alt="Screenshot 2024-11-01 123726" src="https://github.com/user-attachments/assets/c4e16ddc-51e1-4ca6-8b9f-bffa840a7740">
+
+
+### Introduction to Logic Synthesis
+
+Logic synthesis encompasses several key processes:
+
+1. **Translation**: This step transforms HDL code (like Verilog) into an internal representation for further processing.
+   
+2. **Optimization**: The design is refined to improve area, speed, and power efficiency by simplifying gate structures.
+
+3. **Netlist Generation**: The result is a netlist that details the gates and their interconnections, ready for implementation.
+
+### SYNTHESIS
+
+<img width="610" alt="Screenshot 2024-11-01 123745" src="https://github.com/user-attachments/assets/02f5d5f1-91e7-4873-b614-466558fdac68">
+
+### Why different flavors of gate?
+
+<img width="593" alt="Screenshot 2024-11-01 123816" src="https://github.com/user-attachments/assets/267d8f0b-df7c-4ac5-9ffc-e0705429ef64">
+
+### Why do we need Slow cells?
+
+<img width="558" alt="Screenshot 2024-11-01 123843" src="https://github.com/user-attachments/assets/7bef07b7-a7da-471b-b550-a3381ef6d6b0">
+
+### Faster Cells Vs Slower Cells
+
+<img width="583" alt="Screenshot 2024-11-01 123854" src="https://github.com/user-attachments/assets/a0b2430c-1d44-4831-98a7-661ef67011c6">
+
+### Synthesis Illustration
+
+<img width="620" alt="Screenshot 2024-11-01 123914" src="https://github.com/user-attachments/assets/5d17bd79-9b85-4253-8dbf-6837735665ce">
 
