@@ -42,7 +42,7 @@ Testbench does not have Primary input or primary outputs.
 
 ![WhatsApp Image 2024-10-31 at 11 59 31 PM (3)](https://github.com/user-attachments/assets/2aee61ab-2e87-4deb-b5f4-64ef042199e4)
 
-### Lab 2: Introduction to iverilog gtkwave part1
+## Lab 2: Introduction to iverilog gtkwave part1
 
 Step 1: Navigate to the verilog_files directory.
 #### Step 2: Load the design by executing the following command:
