@@ -115,7 +115,7 @@ Logic synthesis encompasses several key processes:
 ![1](https://github.com/user-attachments/assets/a2ec47f9-1419-4d55-ae34-d092afa909ee)
 
 #### Read liberty files
-     read_liberty -lib /home/dhanvanti/scl_pdk_v2/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib
+     read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1V80.lib
   
 ![WhatsApp Image 2024-11-01 at 12 01 45 PM](https://github.com/user-attachments/assets/778eda84-c880-40cb-af46-05bdcc060f8c)
 
@@ -133,7 +133,7 @@ Logic synthesis encompasses several key processes:
 ![WhatsApp Image 2024-11-01 at 12 01 46 PM](https://github.com/user-attachments/assets/81e5ee63-1b9b-4794-8aae-f9a8fff24954)
 
 #### logic optimization using ABC algorithm
-     abc -liberty /home/dhanvanti/scl_pdk_v2/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib
+     abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1V80.lib
      
 ![WhatsApp Image 2024-11-01 at 12 01 46 PM (2)](https://github.com/user-attachments/assets/b72345ac-dcaf-41dc-8b4e-4d910ac52aa8)
 
