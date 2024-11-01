@@ -65,3 +65,10 @@ Click on tb good mux, inputs and outputs signal will appear drag and drop them a
 
 To see the transitions of particular input
 ![WhatsApp Image 2024-10-31 at 11 59 31 PM (10)](https://github.com/user-attachments/assets/f720b025-c709-435e-b16e-7c206511d527)
+
+## Lab 2: Introduction to iverilog gtkwave part2
+
+![WhatsApp Image 2024-10-31 at 11 59 31 PM (12)](https://github.com/user-attachments/assets/cf625cc2-c8b1-44c9-ac5a-013a508a7cf1)
+![WhatsApp Image 2024-10-31 at 11 59 31 PM (11)](https://github.com/user-attachments/assets/cbc67ed6-d2ae-4a1f-8079-322028893af9)
+
+
