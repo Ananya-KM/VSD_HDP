@@ -52,7 +52,7 @@ Steps
 2. **Read Liberty Files**:
    This command loads the library file needed for synthesis.
    ```bash
-   read_liberty -lib /home/dhanvanti/scl_pdk_v2/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib
+   read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1V80.v
    ```
 
 3. **Read Verilog Files**:
@@ -70,7 +70,7 @@ Steps
 5. **Logic Optimization Using ABC Algorithm**:
    This step performs logic optimization on the synthesized design using the ABC tool, leveraging the same liberty file.
    ```bash
-   abc -liberty /home/dhanvanti/scl_pdk_v2/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib
+   abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1V80.v
    ```
 
 6. **Show the Module**:
