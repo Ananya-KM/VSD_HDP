@@ -183,3 +183,11 @@ step 6:Repeat Steps 1-3 using the Synchronous Reset D-Flip Flop
 Execute show to view the netlist for the Asynchronous Reset D-Flip Flop
 
 ![WhatsApp Image 2024-11-02 at 8 34 59 AM](https://github.com/user-attachments/assets/46e76c66-807d-4627-9434-4d1ac2676ce1)
+
+Execute show to view the netlist design for the Ashynchronous Set D-Flip Flop
+
+![WhatsApp Image 2024-11-02 at 8 34 59 AM (5)](https://github.com/user-attachments/assets/150893ae-4ffb-4e6d-98a8-1575055d6e15)
+
+Execute show to view the netlist design for the Synchronous Reset D-Flip Flop
+
+![WhatsApp Image 2024-11-02 at 8 34 59 AM (6)](https://github.com/user-attachments/assets/7ea9f83a-6ce3-4b8c-9eb2-c97b35feeb63)
