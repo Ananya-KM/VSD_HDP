@@ -113,5 +113,12 @@ Steps
 
 ## Submudule level Synthesis
 Repeat the above steps and do the synthesis for sub_module1
+![WhatsApp Image 2024-11-02 at 8 35 03 AM (7)](https://github.com/user-attachments/assets/aed3a391-b3a9-4fad-8184-c3703ec3824d)
+
+![WhatsApp Image 2024-11-02 at 8 35 03 AM (6)](https://github.com/user-attachments/assets/5f053b74-869c-423b-b3ac-8d077f74668b)
+
+![WhatsApp Image 2024-11-02 at 8 35 00 AM (1)](https://github.com/user-attachments/assets/cc3e1e5d-919a-4b88-ba4f-e50293ca6bf1)
+
+![WhatsApp Image 2024-11-02 at 8 35 00 AM](https://github.com/user-attachments/assets/c5973c41-8486-4fb4-b202-9a6d9424128a)
 
 
