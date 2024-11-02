@@ -43,7 +43,6 @@ In **Hierarchical Synthesis**, each part of the design is worked on separately, 
 In **Flat Synthesis**, the whole design is processed all at once, without breaking it down into smaller parts. 
 
 Steps
-Your Yosys synthesis script looks good! Here’s a breakdown of each command for clarity:
 
 1. **Invoke Yosys**:
    ```bash
@@ -86,6 +85,32 @@ Your Yosys synthesis script looks good! Here’s a breakdown of each command for
 ![WhatsApp Image 2024-11-02 at 8 35 03 AM (2)](https://github.com/user-attachments/assets/08981d06-693b-487c-96a9-2aef9a491f94)
 
 ## FLAT SYNTHESIS
+Steps
+
+
+1. **Flatten the Design**:
+   This command flattens the hierarchical design, combining all modules into a single flat structure.
+   ```bash
+   flatten
+   ```
+
+2. **Write the Flattened Design to a Verilog File**:
+   This command writes the flattened design to a new Verilog file without any attributes.
+   ```bash
+   write_verilog -noattr multiple_module_flat.v
+   ```
+
+3. **Open the Flattened Verilog File**:
+   This command opens the newly created Verilog file in the gVim editor for further editing or review.
+   ```bash
+   !gvim multiple_module_flat.v
+   ```
+![WhatsApp Image 2024-11-02 at 8 35 03 AM (3)](https://github.com/user-attachments/assets/f28bd7f2-98dd-4435-983e-ab13e3ec90eb)
+
+![WhatsApp Image 2024-11-02 at 8 35 03 AM (4)](https://github.com/user-attachments/assets/331cc630-03ac-47fa-8ca3-d6372a1a8490)
+
+![WhatsApp Image 2024-11-02 at 8 35 03 AM (5)](https://github.com/user-attachments/assets/c79afd97-8490-47de-91da-77e2700560af)
+
 
 
 
