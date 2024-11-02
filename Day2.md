@@ -210,4 +210,23 @@ Execute show to view the netlist design for the Synchronous Reset D-Flip Flop
 ![WhatsApp Image 2024-11-02 at 8 34 59 AM (9)](https://github.com/user-attachments/assets/4f62c5df-a938-4508-9d33-7904ea606a49)
 ![WhatsApp Image 2024-11-02 at 8 34 59 AM (10)](https://github.com/user-attachments/assets/660c9877-e804-4653-a1fe-848deb355c10)
 
+### 2.mul8 Synthesis
+
+1. **Read the Verilog File**:
+   ```bash
+   read_verilog mult_8.v
+   ```
+
+2. **Synthesize the Top-Level Module**:
+   ```bash
+   synth -top mult8
+   ```
+![WhatsApp Image 2024-11-02 at 8 34 59 AM (3)](https://github.com/user-attachments/assets/102c86f3-643b-44bd-bb62-b2c696bb36be)
+
+
+![WhatsApp Image 2024-11-02 at 8 34 59 AM](https://github.com/user-attachments/assets/b41c5d43-c740-4df7-a631-85a69420e929)
+
+ ![WhatsApp Image 2024-11-02 at 8 34 59 AM (1)](https://github.com/user-attachments/assets/4ab0041b-8de6-44e3-9645-f72d296d006e)
+   
+![WhatsApp Image 2024-11-02 at 8 34 59 AM (2)](https://github.com/user-attachments/assets/3fc04c95-3657-4fee-87b0-681686390bee)
 
