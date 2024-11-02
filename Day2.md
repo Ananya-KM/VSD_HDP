@@ -127,12 +127,30 @@ step 1: Run iverilog for an Asynchronous Reset D-Flip Flop using its testbench
 
 step 2: Execute the output file (a.out)
 
+![WhatsApp Image 2024-11-02 at 8 35 00 AM (1)](https://github.com/user-attachments/assets/8b5b9e1b-6f20-4678-bef1-f69807db903e)
+
 step 3: Run GTKWave to view the behaviour of the Asynchronous Reset D-Flip Flop
 Observe the behaviour of the Asynchronous Reset D-Flip Flop
 
+![WhatsApp Image 2024-11-02 at 8 34 59 AM](https://github.com/user-attachments/assets/c52d10f2-2b90-4ed7-9798-e686e2de3d31)
+
+![WhatsApp Image 2024-11-02 at 8 34 59 AM (1)](https://github.com/user-attachments/assets/a04ecfac-007c-4804-b843-9ac2f4f2c203)
+
 step 4:Repeat Steps 1-3 using the Asynchronous Set D-Flip Flop
+![WhatsApp Image 2024-11-02 at 8 34 59 AM (2)](https://github.com/user-attachments/assets/9b67da09-e619-42c9-aba4-cd5380af1cc7)
 
 step 5:Observe the behaviour of the Asynchronous Set D-Flip Flop
+![WhatsApp Image 2024-11-02 at 8 34 59 AM (3)](https://github.com/user-attachments/assets/f3b6867c-2625-4c76-ab57-ab31a46492ac)
 
-step 6:Repeat Steps 1-3 using the Synchronous Reset D-Flip Flop
+![WhatsApp Image 2024-11-02 at 8 34 59 AM (4)](https://github.com/user-attachments/assets/43d21906-28f0-411c-9e98-86fa0614437c)
+
+step 6:Repeat Steps 1-3 using the Synchronous Reset D-Flip Flop 
+
+![WhatsApp Image 2024-11-02 at 8 34 59 AM (7)](https://github.com/user-attachments/assets/92e7741e-242d-4e09-aca3-c672cbae3fc5)
+
+</p> Observe the behaviour of the Synchronous Reset D-Flip Flop
+
+![WhatsApp Image 2024-11-02 at 8 34 59 AM (5)](https://github.com/user-attachments/assets/e13b5354-80e0-4a3c-9429-635af69637dd)
+
+![WhatsApp Image 2024-11-02 at 8 34 59 AM (6)](https://github.com/user-attachments/assets/03c934e0-7801-45c5-879b-0cae5ca3dbce)
 
