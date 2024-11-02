@@ -127,7 +127,9 @@ step 1: Run iverilog for an Asynchronous Reset D-Flip Flop using its testbench
 
 step 2: Execute the output file (a.out)
 
-![WhatsApp Image 2024-11-02 at 8 35 00 AM (1)](https://github.com/user-attachments/assets/8b5b9e1b-6f20-4678-bef1-f69807db903e)
+![WhatsApp Image 2024-11-02 at 8 35 00 AM (2)](https://github.com/user-attachments/assets/0591fb79-195b-4d81-8d48-971a58b667cb)
+
+
 
 step 3: Run GTKWave to view the behaviour of the Asynchronous Reset D-Flip Flop
 Observe the behaviour of the Asynchronous Reset D-Flip Flop
