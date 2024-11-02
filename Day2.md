@@ -178,11 +178,12 @@ step 6:Repeat Steps 1-3 using the Synchronous Reset D-Flip Flop
 
 ![WhatsApp Image 2024-11-02 at 8 34 59 AM (2)](https://github.com/user-attachments/assets/7121b456-c26a-453a-a338-6e0c43391cf4)
 
-![WhatsApp Image 2024-11-02 at 8 34 59 AM (1)](https://github.com/user-attachments/assets/b2392f2b-4811-4edf-939d-5512c64eb64f)
+![WhatsApp Image 2024-11-02 at 8 34 59 AM (3)](https://github.com/user-attachments/assets/8fef56d5-0b2b-4b93-b423-4e676db1b609)
 
 Execute show to view the netlist for the Asynchronous Reset D-Flip Flop
 
-![WhatsApp Image 2024-11-02 at 8 34 59 AM](https://github.com/user-attachments/assets/46e76c66-807d-4627-9434-4d1ac2676ce1)
+![WhatsApp Image 2024-11-02 at 8 34 59 AM (4)](https://github.com/user-attachments/assets/34e29130-5eba-4705-880a-74b5e26ebfd5)
+
 
 Execute show to view the netlist design for the Ashynchronous Set D-Flip Flop
 
