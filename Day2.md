@@ -111,6 +111,7 @@ Steps
 
 ![WhatsApp Image 2024-11-02 at 8 35 03 AM (5)](https://github.com/user-attachments/assets/c79afd97-8490-47de-91da-77e2700560af)
 
-
+## Submudule level Synthesis
+Repeat the above steps and do the synthesis for sub_module1
 
 
