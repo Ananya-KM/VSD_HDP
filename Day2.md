@@ -121,4 +121,18 @@ Repeat the above steps and do the synthesis for sub_module1
 
 ![WhatsApp Image 2024-11-02 at 8 35 00 AM](https://github.com/user-attachments/assets/c5973c41-8486-4fb4-b202-9a6d9424128a)
 
+## Flop Coding Styles
+### part 1: Different Flip Flops
+step 1: Run iverilog for an Asynchronous Reset D-Flip Flop using its testbench
+
+step 2: Execute the output file (a.out)
+
+step 3: Run GTKWave to view the behaviour of the Asynchronous Reset D-Flip Flop
+Observe the behaviour of the Asynchronous Reset D-Flip Flop
+
+step 4:Repeat Steps 1-3 using the Asynchronous Set D-Flip Flop
+
+step 5:Observe the behaviour of the Asynchronous Set D-Flip Flop
+
+step 6:Repeat Steps 1-3 using the Synchronous Reset D-Flip Flop
 
