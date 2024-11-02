@@ -156,3 +156,30 @@ step 6:Repeat Steps 1-3 using the Synchronous Reset D-Flip Flop
 
 ![WhatsApp Image 2024-11-02 at 8 34 59 AM (6)](https://github.com/user-attachments/assets/03c934e0-7801-45c5-879b-0cae5ca3dbce)
 
+### PART 2 : FLOP SYNTHESIS
+
+1. **Read the Library**:
+   ```bash
+   read_liberty -lib /path/to/your/library.lib
+   ```
+
+2. **Read the Verilog File**:
+   ```bash
+   read_verilog dff.v
+   ```
+
+3. **Define the Top-Level Module to Synthesize**:
+   ```bash
+   synth -top dff
+   ```
+ ![WhatsApp Image 2024-11-02 at 8 34 59 AM](https://github.com/user-attachments/assets/92a455a1-91eb-4d69-94da-88a873ac9d2c)
+   
+![WhatsApp Image 2024-11-02 at 8 34 59 AM (1)](https://github.com/user-attachments/assets/1eade65f-b7af-475a-b1c9-f6de69365183)
+
+![WhatsApp Image 2024-11-02 at 8 34 59 AM (2)](https://github.com/user-attachments/assets/7121b456-c26a-453a-a338-6e0c43391cf4)
+
+![WhatsApp Image 2024-11-02 at 8 34 59 AM (1)](https://github.com/user-attachments/assets/b2392f2b-4811-4edf-939d-5512c64eb64f)
+
+Execute show to view the netlist for the Asynchronous Reset D-Flip Flop
+
+![WhatsApp Image 2024-11-02 at 8 34 59 AM](https://github.com/user-attachments/assets/46e76c66-807d-4627-9434-4d1ac2676ce1)
