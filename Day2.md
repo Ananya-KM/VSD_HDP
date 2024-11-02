@@ -42,5 +42,50 @@ In **Hierarchical Synthesis**, each part of the design is worked on separately, 
 
 In **Flat Synthesis**, the whole design is processed all at once, without breaking it down into smaller parts. 
 
+Steps
+Your Yosys synthesis script looks good! Here’s a breakdown of each command for clarity:
+
+1. **Invoke Yosys**:
+   ```bash
+   yosys
+   ```
+
+2. **Read Liberty Files**:
+   This command loads the library file needed for synthesis.
+   ```bash
+   read_liberty -lib /home/dhanvanti/scl_pdk_v2/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib
+   ```
+
+3. **Read Verilog Files**:
+   This command reads in your Verilog design files.
+   ```bash
+   read_verilog multiple_modules.v
+   ```
+
+4. **Run Synthesis on Top Level Module**:
+   This tells Yosys to synthesize the specified top-level module.
+   ```bash
+   synth -top multiple_modules
+   ```
+
+5. **Logic Optimization Using ABC Algorithm**:
+   This step performs logic optimization on the synthesized design using the ABC tool, leveraging the same liberty file.
+   ```bash
+   abc -liberty /home/dhanvanti/scl_pdk_v2/stdlib/fs120/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib
+   ```
+
+6. **Show the Module**:
+   Finally, this command displays the synthesized design.
+   ```bash
+   show
+   ```
+![WhatsApp Image 2024-11-02 at 8 35 03 AM](https://github.com/user-attachments/assets/c353d49c-2214-4c92-80f6-ce3addeb993e)
+
+![WhatsApp Image 2024-11-02 at 8 35 03 AM (1)](https://github.com/user-attachments/assets/f4878c53-8ac3-4c7b-aba5-e3d030ebd4a8)
+
+![WhatsApp Image 2024-11-02 at 8 35 03 AM (2)](https://github.com/user-attachments/assets/08981d06-693b-487c-96a9-2aef9a491f94)
+
+## FLAT SYNTHESIS
+
 
 
