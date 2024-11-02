@@ -36,3 +36,11 @@ In the `.lib` file, the following details are specified:
 
 These parameters define the operational characteristics of the library cells.
 
+## Hierarchial vs Flat Synthesis
+
+In **Hierarchical Synthesis**, each part of the design is worked on separately, and then these parts are combined to create the complete design. 
+
+In **Flat Synthesis**, the whole design is processed all at once, without breaking it down into smaller parts. 
+
+
+
