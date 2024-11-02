@@ -192,3 +192,22 @@ Execute show to view the netlist design for the Ashynchronous Set D-Flip Flop
 Execute show to view the netlist design for the Synchronous Reset D-Flip Flop
 
 ![WhatsApp Image 2024-11-02 at 8 34 59 AM (6)](https://github.com/user-attachments/assets/7ea9f83a-6ce3-4b8c-9eb2-c97b35feeb63)
+
+## Special Case Optimization
+### 1. mul2 Synthesis
+
+1. **Read the Verilog File**:
+   ```bash
+   read_verilog mult_2.v
+   ```
+
+2. **Synthesize the Top-Level Module**:
+   ```bash
+   synth -top mult2
+   ```
+ ![WhatsApp Image 2024-11-02 at 8 34 59 AM (11)](https://github.com/user-attachments/assets/f67f7f41-536c-4d0e-be4c-27276f3e2e08)
+ ![WhatsApp Image 2024-11-02 at 8 34 59 AM (8)](https://github.com/user-attachments/assets/80474427-9dd5-4bd6-8cc6-4f1a0cff3851)
+![WhatsApp Image 2024-11-02 at 8 34 59 AM (9)](https://github.com/user-attachments/assets/4f62c5df-a938-4508-9d33-7904ea606a49)
+![WhatsApp Image 2024-11-02 at 8 34 59 AM (10)](https://github.com/user-attachments/assets/660c9877-e804-4653-a1fe-848deb355c10)
+
+
