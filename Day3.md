@@ -1,5 +1,5 @@
 # DAY 3
-# Combinational and sequential optimizations
+# Combinational and Sequential Optimizations
 ## Introduction to optimizations
 ## Combinational Logic Optimisation:
 ### Technique used for combinatinal optimisation:
@@ -27,5 +27,71 @@
 #### Advanced optimization:
 
 <img width="616" alt="Screenshot 2024-11-04 100544" src="https://github.com/user-attachments/assets/c9609642-cb0c-47cf-8fda-c5d1c468b255">
+
+## Combinational Logic Optimizations
+### opt_check 1
+steps
+Sure! Here are the steps:
+
+Here are your updated steps:
+
+1. `read_liberty -lib ../lib/sky130_fd_sc_hd_tt_025_1v80.lib`
+2. `read_verilog opt_check1.v`
+3. `synth -top opt_check1`
+4. `opt_clean -purge`
+5. `abc -liberty ../lib/sky130_fd_sc_hd_tt_025_1v80.lib`
+6. `show`
+##### Synthesis result
+![WhatsApp Image 2024-11-04 at 9 28 31 AM](https://github.com/user-attachments/assets/56edff2e-cdb2-4d1f-8e3f-1e668e3816b2)
+###### Optimization
+![WhatsApp Image 2024-11-04 at 9 28 31 AM (1)](https://github.com/user-attachments/assets/5409423f-613c-4d48-a841-cf2f236f02ee)
+###### Result:
+![WhatsApp Image 2024-11-04 at 9 28 31 AM (2)](https://github.com/user-attachments/assets/ae3a9fba-3204-4cc9-97f7-9aaa6a04a50c)
+
+### opt_check 2
+steps
+Here are your updated steps:
+
+1. `read_liberty -lib ../lib/sky130_fd_sc_hd_tt_025_1v80.lib`
+2. `read_verilog opt_check2.v`
+3. `synth -top opt_check2`
+4. `opt_clean -purge`
+5. `abc -liberty ../lib/sky130_fd_sc_hd_tt_025_1v80.lib`
+6. `show`
+
+![WhatsApp Image 2024-11-04 at 9 28 28 AM](https://github.com/user-attachments/assets/306bd599-2b50-4477-ab5b-ba9d70e6c08b)
+![WhatsApp Image 2024-11-04 at 9 28 28 AM (1)](https://github.com/user-attachments/assets/d9e41d9d-13b4-44cf-a402-cf3b520f9e0d)
+![WhatsApp Image 2024-11-04 at 9 28 28 AM (2)](https://github.com/user-attachments/assets/1da61c0f-95d9-4460-8c09-b27417ad02a7)
+![WhatsApp Image 2024-11-04 at 9 28 28 AM (3)](https://github.com/user-attachments/assets/ddd7419e-1c94-42bb-9115-53f0f6a3208e)
+
+### opt_check 3
+steps
+
+1. `read_liberty -lib ../lib/sky130_fd_sc_hd_tt_025_1v80.lib`
+2. `read_verilog opt_check3.v`
+3. `synth -top opt_check3`
+4. `opt_clean -purge`
+5. `abc -liberty ../lib/sky130_fd_sc_hd_tt_025_1v80.lib`
+6. `show`
+7. 
+![WhatsApp Image 2024-11-04 at 9 28 28 AM (4)](https://github.com/user-attachments/assets/ddb4f228-91c5-45ed-a4bd-fc3a4b5c0d89)
+![WhatsApp Image 2024-11-04 at 9 28 28 AM (5)](https://github.com/user-attachments/assets/1acae6e4-1bb4-4d0d-811a-aa74b45c7639)
+![WhatsApp Image 2024-11-04 at 9 28 28 AM (6)](https://github.com/user-attachments/assets/80f3e012-7ba3-4518-bc3f-9bbb6de97863)
+
+### opt_check 4
+
+Steps
+
+1. `read_liberty -lib ../lib/sky130_fd_sc_hd_tt_025_1v80.lib`
+2. `read_verilog opt_check4.v`
+3. `synth -top opt_check4`
+4. `opt_clean -purge`
+5. `abc -liberty ../lib/sky130_fd_sc_hd_tt_025_1v80.lib`
+6. `show`
+
+![WhatsApp Image 2024-11-04 at 9 28 28 AM (7)](https://github.com/user-attachments/assets/66bfaa4d-f38f-45c6-b537-8f3457bdf071)
+
+![WhatsApp Image 2024-11-04 at 9 28 28 AM (8)](https://github.com/user-attachments/assets/c2373cef-52cf-47fd-95db-ea616f0e3613)
+
 
 
