@@ -166,7 +166,23 @@ steps
 ![WhatsApp Image 2024-11-04 at 9 28 28 AM (19)](https://github.com/user-attachments/assets/1530dd77-11ac-422d-8f43-7bc2b1e08ff9)
 ![WhatsApp Image 2024-11-04 at 9 28 28 AM (20)](https://github.com/user-attachments/assets/f8572032-d171-4a66-b93d-d59967444fab)
 
-   
+
+## Sequential Optimizations for Unused Outputs
+### counter_opt
+steps
+1. `read_liberty -lib ../lib/sky130_fd_sc_hd_tt_025_1v80.lib`
+2. `read_verilog counter_opt.v`
+3. `synth -top counter_opt`
+4. `dfflibmap -liberty ../lib/sky130_fd_sc_hd_tt_025_1v80.lib`
+5. `abc -liberty ../lib/sky130_fd_sc_hd_tt_025_1v80.lib`
+6. `show`
+
+![WhatsApp Image 2024-11-04 at 9 28 28 AM (21)](https://github.com/user-attachments/assets/4412ef11-1ec1-458e-ac1c-d8e85d9ae8da)
+![WhatsApp Image 2024-11-04 at 9 28 28 AM (22)](https://github.com/user-attachments/assets/ff958f4c-5a10-4f4f-96a8-7075350c8857)
+![WhatsApp Image 2024-11-04 at 9 28 28 AM (23)](https://github.com/user-attachments/assets/cc6d14e7-da71-4fc2-a755-3568cecd921f)
+![WhatsApp Image 2024-11-04 at 9 28 28 AM (24)](https://github.com/user-attachments/assets/08d7e3ff-b8b6-4baa-9234-8887ed82b65e)
+
+
 
 
    
