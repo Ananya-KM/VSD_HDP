@@ -54,3 +54,22 @@ This occurs when the synthesized gate-level netlist doesn’t match the behavior
    - **Solution**: Always use non-blocking (`<=`) assignments in sequential logic to avoid simulation/synthesis mismatches.
 
 In summary, GLS ensures that your design behaves as expected after synthesis, and common synthesis-simulation mismatches are often caused by improper Verilog coding practices.
+
+## Labs on GLS and Synthesis-Simulation Mismatch
+### 1.ternary_operator_mux.v
+RTL Simulation
+
+![WhatsApp Image 2024-11-05 at 5 38 40 AM](https://github.com/user-attachments/assets/f2963bf1-3787-4f44-b348-b031b40a9922)
+![WhatsApp Image 2024-11-05 at 5 38 40 AM (1)](https://github.com/user-attachments/assets/702a6801-c554-46eb-80e7-ba4a79a9d52e)
+
+synthesis
+
+![WhatsApp Image 2024-11-05 at 5 38 38 AM](https://github.com/user-attachments/assets/d53ec49a-7680-4642-b659-5385c86b85fc)
+
+output
+
+![WhatsApp Image 2024-11-05 at 5 38 36 AM](https://github.com/user-attachments/assets/1eeae96e-34aa-4f52-b90b-edee78e36c5f)
+
+GLS Ouput
+
+![WhatsApp Image 2024-11-05 at 5 38 34 AM](https://github.com/user-attachments/assets/42cc18af-1c5a-498d-a8ea-a96e79841899)
