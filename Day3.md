@@ -73,7 +73,7 @@ steps
 4. `opt_clean -purge`
 5. `abc -liberty ../lib/sky130_fd_sc_hd_tt_025_1v80.lib`
 6. `show`
-7. 
+
 ![WhatsApp Image 2024-11-04 at 9 28 28 AM (4)](https://github.com/user-attachments/assets/ddb4f228-91c5-45ed-a4bd-fc3a4b5c0d89)
 ![WhatsApp Image 2024-11-04 at 9 28 28 AM (5)](https://github.com/user-attachments/assets/1acae6e4-1bb4-4d0d-811a-aa74b45c7639)
 ![WhatsApp Image 2024-11-04 at 9 28 28 AM (6)](https://github.com/user-attachments/assets/80f3e012-7ba3-4518-bc3f-9bbb6de97863)
