@@ -93,4 +93,17 @@ GLS Output
 
 ![WhatsApp Image 2024-11-05 at 5 38 34 AM (3)](https://github.com/user-attachments/assets/5d8601d7-f296-454e-9c5f-92c3218f731a)
 
+## Labs on Synth-Sim Mismatch for Blocking Statement
+### blocking_caveat
 
+![WhatsApp Image 2024-11-05 at 5 38 34 AM](https://github.com/user-attachments/assets/25b19225-8b2a-43cf-97a3-0608cf027cd2)
+
+![WhatsApp Image 2024-11-05 at 5 38 34 AM (1)](https://github.com/user-attachments/assets/b371e37e-34f0-41a6-a065-e99113a6cb1d)
+
+![WhatsApp Image 2024-11-05 at 5 38 34 AM (2)](https://github.com/user-attachments/assets/f24bbd15-11d7-4dd5-b2a0-d01bf5ade5a1)
+
+![WhatsApp Image 2024-11-05 at 5 38 34 AM (3)](https://github.com/user-attachments/assets/101605d0-25c3-48f9-b36d-dcf873670deb)
+
+![WhatsApp Image 2024-11-05 at 5 38 34 AM (4)](https://github.com/user-attachments/assets/6906a832-f70c-422e-a736-1916823d1e74)
+
+![WhatsApp Image 2024-11-05 at 5 38 34 AM (5)](https://github.com/user-attachments/assets/76907202-b8bc-45e8-b045-a0f0a814739b)
