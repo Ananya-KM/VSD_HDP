@@ -60,9 +60,10 @@ In summary, GLS ensures that your design behaves as expected after synthesis, an
 RTL Simulation
 
 ![WhatsApp Image 2024-11-05 at 5 38 40 AM](https://github.com/user-attachments/assets/f2963bf1-3787-4f44-b348-b031b40a9922)
-![WhatsApp Image 2024-11-05 at 5 38 40 AM (1)](https://github.com/user-attachments/assets/702a6801-c554-46eb-80e7-ba4a79a9d52e)
 
-synthesis
+Synthesis
+
+![WhatsApp Image 2024-11-05 at 5 38 40 AM (1)](https://github.com/user-attachments/assets/702a6801-c554-46eb-80e7-ba4a79a9d52e)
 
 ![WhatsApp Image 2024-11-05 at 5 38 38 AM](https://github.com/user-attachments/assets/d53ec49a-7680-4642-b659-5385c86b85fc)
 
@@ -73,3 +74,23 @@ output
 GLS Ouput
 
 ![WhatsApp Image 2024-11-05 at 5 38 34 AM](https://github.com/user-attachments/assets/42cc18af-1c5a-498d-a8ea-a96e79841899)
+
+### 2.bad_mux.v
+
+RTL Simulation 
+
+![WhatsApp Image 2024-11-05 at 5 38 34 AM](https://github.com/user-attachments/assets/b8f56ca6-1182-47fd-9183-883dff2315a5)
+
+Synthesis
+
+![WhatsApp Image 2024-11-05 at 5 38 34 AM (1)](https://github.com/user-attachments/assets/360636d9-553b-4848-80d0-bfebd58321d3)
+
+OUTPUT
+
+![WhatsApp Image 2024-11-05 at 5 38 34 AM (2)](https://github.com/user-attachments/assets/545a0810-ad47-46f8-b4e5-0142fa90b2c6)
+
+GLS Output
+
+![WhatsApp Image 2024-11-05 at 5 38 34 AM (3)](https://github.com/user-attachments/assets/5d8601d7-f296-454e-9c5f-92c3218f731a)
+
+
