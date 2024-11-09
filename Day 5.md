@@ -35,7 +35,7 @@ The project involves two key stages of simulation:
 Clone or set up the directory structure as follows
 
 # Simulation Steps
-#### Pre-synthesis Simulation
+## Pre-synthesis Simulation
 
 ### Step 1: Clone **VSDBabySoC** (Top-Level SoC Module)
 ```bash
@@ -70,10 +70,17 @@ git clone https://github.com/vsdip/rvmyth_avsddac_interface.git
     /pre_synth_sim.out
 ### step 10:
     gtkwave pre_synth_sim.vcd
+    
+![WhatsApp Image 2024-11-09 at 8 40 14 AM](https://github.com/user-attachments/assets/e44fee49-951d-4a2c-b3ad-c0d1b27f81ff)
 
 
 ### To view the waveform in gtkwave give the following command
 
      gtkwave pre_synth_sim.vcd
-     
+
+![WhatsApp Image 2024-11-09 at 8 40 13 AM (1)](https://github.com/user-attachments/assets/4db80722-b452-45b9-bc2c-f5868c371473)
+
 Drag and drop the CLK, reset, OUT (DAC) (as analog step), and RV TO DAC [9:0] signals to their respective locations in the simulation tool.
+
+![WhatsApp Image 2024-11-09 at 8 40 13 AM](https://github.com/user-attachments/assets/3059b368-45f3-4c5a-b4e1-4b8a9765b1ea)
+
