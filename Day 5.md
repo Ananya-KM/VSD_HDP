@@ -30,3 +30,50 @@ The project involves two key stages of simulation:
 1. **Pre-synthesis simulation**: This is done before any synthesis of the design (mapping it to actual hardware) and focuses on simulating the RTL (Register Transfer Level) design to ensure functional correctness.
   
 2. **Post-synthesis simulation**: This is done after synthesis has been performed and takes into account how the design will behave once it is mapped to the actual hardware (e.g., gates, flip-flops, etc.). It is used to verify that the design will work as intended on actual hardware.
+
+# 1. Setup and Prepare Project Directory
+Clone or set up the directory structure as follows
+
+# Simulation Steps
+#### Pre-synthesis Simulation
+
+### Step 1: Clone **VSDBabySoC** (Top-Level SoC Module)
+```bash
+git clone https://github.com/manili/VSDBabySoC.git
+```
+
+### Step 2: Clone **rvmyth** (RISC-V Core)
+```bash
+git clone https://github.com/kunalg123/rvmyth.git
+```
+
+### Step 3: Clone **avsdpll** (PLL Module)
+```bash
+git clone https://github.com/lakshmi-sathi/avsdpll_1v8.git
+```
+
+### Step 4: Clone **avsddac** (DAC Module)
+```bash
+git clone https://github.com/vsdip/rvmyth_avsddac_interface.git
+```
+### step 5: 
+    cd VSDBabySoC
+### step 6:
+    mkdir -p output/pre_synth_sim
+### step 7:
+    iverilog -o /home/ananya123/VSDBabySoC/output/pre_synth_sim/pre_synth_sim.out -DPRE_SYNTH_SIM \
+    -I /home/ananya123/VSDBabySoC/src/include -I /home/ananya123/VSDBabySoC/src/module \
+    /home/ananya123/VSDBabySoC/src/module/testbench.v
+### step 8:
+    cd output/pre_synth_sim
+### step 9:
+    /pre_synth_sim.out
+### step 10:
+    gtkwave pre_synth_sim.vcd
+
+
+### To view the waveform in gtkwave give the following command
+
+     gtkwave pre_synth_sim.vcd
+     
+Drag and drop the CLK, reset, OUT (DAC) (as analog step), and RV TO DAC [9:0] signals to their respective locations in the simulation tool.
