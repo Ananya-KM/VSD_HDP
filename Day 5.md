@@ -84,3 +84,50 @@ Drag and drop the CLK, reset, OUT (DAC) (as analog step), and RV TO DAC [9:0] si
 
 ![WhatsApp Image 2024-11-09 at 8 40 13 AM](https://github.com/user-attachments/assets/3059b368-45f3-4c5a-b4e1-4b8a9765b1ea)
 
+# DEBUGGING STEPS
+## Debugging Guide: Single Clock Cycle Output Issue in Simulation
+
+When working with digital simulations, encountering an issue where output is only visible for a single clock cycle is common. This issue can have multiple causes, and this guide provides a beginner-friendly explanation of possible sources and debugging steps.
+
+## Possible Causes and Debugging Steps
+
+### 1. Clock Signal Issues
+   - *Cause*: The clock signal might not be defined or generated correctly, leading to interruptions in the clock pulses.
+   - *Debugging Steps*:
+     - Verify that the clock signal is defined in your testbench and is toggling continuously.
+     - Check the clock frequency and ensure that the setup is aligned with the design's timing requirements.
+     - Inspect the waveform to see if the clock pulse is present throughout the simulation.
+
+### 2. Reset Signal Issues
+   - *Cause*: If the reset signal remains active (asserted) throughout the simulation, it can hold the design in a reset state, causing no output to be generated.
+   - *Debugging Steps*:
+     - Confirm that the reset signal is only active during initialization and then de-asserted to allow the design to operate.
+     - Check the waveform to verify that the reset signal is set to inactive after the initial setup period.
+
+### 3. Enable Signal Configuration
+
+  - *Cause*: Some designs include enable signals that control when the circuit should be active. If this signal is only active for one clock cycle, output will also be limited to that cycle.
+   - *Debugging Steps*:
+     - Inspect the design to identify any enable signals that control output.
+     - Ensure that the enable signal remains active for the desired period.
+     - Monitor the enable signal in the waveform viewer to confirm it aligns with the expected functionality.
+
+### 4. Simulation Time Limit
+   - *Cause*: If the simulation is set to run for a very short time, it may only cover one clock cycle.
+   - *Debugging Steps*:
+     - Extend the simulation time to capture multiple clock cycles and observe the behavior over a longer period.
+     - Ensure that the simulation’s stop time is set to allow enough time for testing multiple cycles.
+
+### 5. Waveform Tool Settings
+   - *Cause*: Sometimes, the waveform viewer might be configured to display only a small time window, making it appear as if output is only generated for one cycle.
+   - *Debugging Steps*:
+     - Adjust the time window in your waveform viewer to see a larger portion of the simulation timeline.
+     - Ensure that all signals are visible in the viewer and set to display for the entire simulation duration
+     - 
+#### pre_synth
+     iverilog -o /home/ananya123/VSDBabySoCC/VSDBabySoC/output/pre_synth_sim/pre_synth_sim.out -DPRE_SYNTH_SIM     -I 
+     /home/ananya123/VSDBabySoCC/VSDBabySoC/src/include -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/module     
+     /home/ananya123/VSDBabySoCC/VSDBabySoC/src/module/testbench.v
+
+![WhatsApp Image 2024-11-10 at 6 42 16 AM](https://github.com/user-attachments/assets/a21ca055-f25f-4428-bfc7-208a65b92297)
+![WhatsApp Image 2024-11-10 at 6 42 16 AM (1)](https://github.com/user-attachments/assets/fe819be2-979a-4413-b9ef-d12272f7a717)
