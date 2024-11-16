@@ -28,12 +28,21 @@ Here is the step-by-step execution plan for running the  commands manually:
 yosys
 ```
 
+![WhatsApp Image 2024-11-16 at 5 20 29 AM (4)](https://github.com/user-attachments/assets/69c01da4-592e-4165-afcf-d42eb0eab08c)
+
+
 Inside the Yosys shell, run:
 ```yosys
 read_verilog /home/ananya123/VSDBabySoCC/VSDBabySoC/src/module/vsdbabysoc.v
 read_verilog -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/include /home/ananya123/VSDBabySoCC/output/compiled_tlv/rvmyth.v
 read_verilog -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/include /home/ananya123/VSDBabySoCC/src/module/clk_gate.v
+
 ```
+![WhatsApp Image 2024-11-16 at 5 54 12 AM](https://github.com/user-attachments/assets/648dc511-7c3c-496a-97c7-a24aa6cb0bae)
+
+![WhatsApp Image 2024-11-16 at 5 20 29 AM (2)](https://github.com/user-attachments/assets/6db87310-6389-4f7c-9418-40e4f6780c18)
+
+![WhatsApp Image 2024-11-16 at 5 20 29 AM (1)](https://github.com/user-attachments/assets/8eddf6c8-c3fb-44d9-b804-5eb836558c44)
 
 ---
 
@@ -44,6 +53,7 @@ read_liberty -lib /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/avsdpll.lib
 read_liberty -lib /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/avsddac.lib
 read_liberty -lib /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
+![WhatsApp Image 2024-11-16 at 5 20 29 AM](https://github.com/user-attachments/assets/2ec505bd-8004-415f-ba9c-3b76a41562f8)
 
 ---
 
@@ -51,6 +61,12 @@ read_liberty -lib /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/sky130_fd_sc_hd
 ```yosys
 synth -top vsdbabysoc
 ```
+![WhatsApp Image 2024-11-16 at 5 20 28 AM](https://github.com/user-attachments/assets/8a49050d-55cb-4ae2-9a93-5fe7c2c72710)
+![WhatsApp Image 2024-11-16 at 5 20 26 AM](https://github.com/user-attachments/assets/f00545e7-bb37-4444-80e7-0881938fb634)
+![WhatsApp Image 2024-11-16 at 5 20 24 AM (2)](https://github.com/user-attachments/assets/655dfaaf-bece-47dc-8a24-bf257e064a4f)
+![WhatsApp Image 2024-11-16 at 5 20 24 AM (1)](https://github.com/user-attachments/assets/5d7a9d12-7722-432c-8ad6-270be51b1df9)
+![WhatsApp Image 2024-11-16 at 5 20 24 AM](https://github.com/user-attachments/assets/51f25b92-c968-4cf3-b553-21ecdbefc828)
+![WhatsApp Image 2024-11-16 at 5 20 23 AM (8)](https://github.com/user-attachments/assets/241a089c-ce62-4f2c-8c6b-9e76d3929197)
 
 ---
 
@@ -58,6 +74,7 @@ synth -top vsdbabysoc
 ```yosys
 dfflibmap -liberty /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
+![WhatsApp Image 2024-11-16 at 5 20 23 AM (7)](https://github.com/user-attachments/assets/566b121d-a5da-47c2-a09b-1660592569c5)
 
 ---
 
@@ -66,6 +83,8 @@ dfflibmap -liberty /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/sky130_fd_sc_h
 opt
 abc -liberty /home/ananya123/VSDBabySoCC/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -script +strash;scorr;ifraig;retime;{D};strash;dch,-f;map,-M,1,{D}
 ```
+![WhatsApp Image 2024-11-16 at 5 20 23 AM (6)](https://github.com/user-attachments/assets/5657a167-e0e2-431a-882e-4a785b059b5d)
+![WhatsApp Image 2024-11-16 at 5 20 23 AM (5)](https://github.com/user-attachments/assets/a0ab61ba-24dc-4b9b-83fa-eb5b78f79f40)
 
 ---
 
@@ -76,6 +95,7 @@ setundef -zero
 clean -purge
 rename -enumerate
 ```
+![WhatsApp Image 2024-11-16 at 5 20 23 AM (4)](https://github.com/user-attachments/assets/e2fd7bc4-5e8a-4236-84dc-002887f3eb82)
 
 ---
 
@@ -83,6 +103,9 @@ rename -enumerate
 ```yosys
 stat
 ```
+![WhatsApp Image 2024-11-16 at 5 20 23 AM (3)](https://github.com/user-attachments/assets/292c9093-9a6d-417e-b094-0b8a6e27e7c3)
+![WhatsApp Image 2024-11-16 at 5 20 23 AM (2)](https://github.com/user-attachments/assets/ce8ad45b-92ae-4cc8-a4dd-0f52028e078e)
+![WhatsApp Image 2024-11-16 at 5 20 23 AM (1)](https://github.com/user-attachments/assets/e1741767-2b83-4d88-909e-e5d4c73411f4)
 
 ---
 
@@ -90,6 +113,7 @@ stat
 ```yosys
 write_verilog -noattr /home/ananya123/VSDBabySoCC/VSDBabySoC/output/synth/vsdbabysoc.synth.v
 ```
+![WhatsApp Image 2024-11-16 at 5 20 23 AM](https://github.com/user-attachments/assets/1e0444b4-ad66-4798-b7f7-7bc1e13cf88a)
 
 ---
 
