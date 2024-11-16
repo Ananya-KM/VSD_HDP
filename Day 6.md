@@ -117,6 +117,39 @@ write_verilog -noattr /home/ananya123/VSDBabySoCC/VSDBabySoC/output/synth/vsdbab
 
 ---
 
+## POST_SYNTHESIS SIMULATION AND WAVEFORMS
+---
+
+### **Step 1: Compile the Testbench**
+Run the following `iverilog` command to compile the testbench:
+```bash
+iverilog -o /home/ananya123/VSDBabySoCC/VSDBabySoC/output/post_synth_sim/post_synth_sim.out -DPRE_SYNTH_SIM \
+-I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/include \
+-I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/module \
+/home/ananya123/VSDBabySoCC/VSDBabySoC/src/module/testbench.v
+```
+---
+### **Step 2: Navigate to the Post-Synthesis Simulation Output Directory**
+```bash
+cd output/post_synth_sim/
+```
+---
+### **Step 3: Run the Simulation**
+
+```bash
+./post_synth_sim.out
+```
+---
+### **Step 4: View the Waveforms in GTKWave**
+
+```bash
+gtkwave post_synth_sim.vcd
+```
+---
+
+![WhatsApp Image 2024-11-16 at 5 20 22 AM (1)](https://github.com/user-attachments/assets/bbb05c7b-4cc8-41f3-8ba4-e26b36655c8b)
+
+![WhatsApp Image 2024-11-16 at 5 20 22 AM](https://github.com/user-attachments/assets/9dd74c45-93f5-4ffb-b8a3-9068996bf465)
 
 
 
