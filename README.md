@@ -12,4 +12,4 @@
 ### DAY 4 - GLS,Blocking vs Non_Blocking and Synthesis Simulation Mismatch
 ### DAY 5 - VSD BabySOC Modelling
 ### DAY 6 - GLS for BabySOC
-### DAY 7 - PVT Corner Analysis
+### DAY 7 - PVT Corner Analysis using OpenSTA
