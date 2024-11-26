@@ -34,7 +34,7 @@ yosys
 Inside the Yosys shell, run:
 ```yosys
 read_verilog /home/ananya123/VSDBabySoCC/VSDBabySoC/src/module/vsdbabysoc.v
-read_verilog -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/include /home/ananya123/VSDBabySoCC/output/compiled_tlv/rvmyth.v
+read_verilog -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/include /home/ananya123/VSDBabySoCC/src/module/rvmyth.v
 read_verilog -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/include /home/ananya123/VSDBabySoCC/src/module/clk_gate.v
 
 ```
@@ -111,7 +111,7 @@ stat
 
 ### **Step 8: Write the Synthesized Netlist**
 ```yosys
-write_verilog -noattr /home/ananya123/VSDBabySoCC/VSDBabySoC/output/synth/vsdbabysoc.synth.v
+write_verilog -noattr /home/ananya123/VSDBabySoCC/VSDBabySoC/output/post_synth_sim/vsdbabysoc.synth.v
 ```
 ![WhatsApp Image 2024-11-16 at 5 20 23 AM](https://github.com/user-attachments/assets/1e0444b4-ad66-4798-b7f7-7bc1e13cf88a)
 
@@ -123,10 +123,7 @@ write_verilog -noattr /home/ananya123/VSDBabySoCC/VSDBabySoC/output/synth/vsdbab
 ### **Step 1: Compile the Testbench**
 Run the following `iverilog` command to compile the testbench:
 ```bash
-iverilog -o /home/ananya123/VSDBabySoCC/VSDBabySoC/output/post_synth_sim/post_synth_sim.out -DPRE_SYNTH_SIM \
--I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/include \
--I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/module \
-/home/ananya123/VSDBabySoCC/VSDBabySoC/src/module/testbench.v
+iverilog -o /home/ananya123/VSDBabySoCC/VSDBabySoC/output/post_synth_sim/post_synth_sim.out -DPOST_SYNTH_SIM -DFUNCTIONAL -DUNIT_DELAY=#1 -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/include -I /home/ananya123/VSDBabySoCC/VSDBabySoC/src/module /home/ananya123/VSDBabySoCC/VSDBabySoC/src/module/testbench.v
 ```
 ---
 ### **Step 2: Navigate to the Post-Synthesis Simulation Output Directory**
@@ -147,9 +144,9 @@ gtkwave post_synth_sim.vcd
 ```
 ---
 
-![WhatsApp Image 2024-11-16 at 5 20 22 AM (1)](https://github.com/user-attachments/assets/bbb05c7b-4cc8-41f3-8ba4-e26b36655c8b)
+![WhatsApp Image 2024-11-25 at 9 07 01 PM](https://github.com/user-attachments/assets/9d79b832-7315-46ed-b028-e2dd5d14d27a)
 
-![WhatsApp Image 2024-11-16 at 5 20 22 AM](https://github.com/user-attachments/assets/9dd74c45-93f5-4ffb-b8a3-9068996bf465)
+![WhatsApp Image 2024-11-25 at 9 07 01 PM (2)](https://github.com/user-attachments/assets/0a6d272d-1aae-45b5-b6aa-914a0087df84)
 
-
+![WhatsApp Image 2024-11-25 at 9 07 01 PM (1)](https://github.com/user-attachments/assets/239557c2-2447-4cd1-a18f-fb1966feebf2)
 
