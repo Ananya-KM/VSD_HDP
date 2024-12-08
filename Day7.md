@@ -111,5 +111,26 @@ The timing libraries can be downloaded from:
      report_wns -digits {4} >> /OpenSTA/examples/BabySOC/STA_OUPUT/sta_wns.txt
      }
      
-![WhatsApp Image 2024-12-07 at 9 14 51 AM (1)](https://github.com/user-attachments/assets/6a29c237-1eb3-4b00-bc6a-7fabed7fc258)
-######  Output reports are not getting generated in the /STA_OUPUT folder
+| PVT_CORNER    | Worst Setup Slack    | Worst Hold Slack    | WNS    | TNS   |
+|-------------|-------------|-------------|-------------|-------------|
+|  tt_025C_1v80    |2.2603   | 0.3096    | 0   | 0    |
+|  ff_100C_1v65     |4.1853   | 0.2491    | 0    | 0    |
+|  ff_100C_1v95    |5.5202    | 0.1960    | 0    | 0    |
+|  ff_n40C_1v56   |1.8047   | 0.2915   | 0    | 0    |
+|  ff_n40C_1v65     |3.1788    | 0.2551   | 0   | 0    |
+|  ff_n40C_1v76  |4.2413  | 0.2243    | 0   | 0    |
+|  ss_100C_1v40    |-11.2888   | 0.9053    | -11.2888  | -9245.0244   |
+|  ss_100C_1v60     |-4.8042   | 0.6420   | -4.8042  | -3378.2246    |
+|  ss_n40C_1v28    |-55.7561   | 1.8296    | -55.7561    | -46170.3242   |
+|  ss_n40C_1v35   |-35.1855  | 1.3475   | -35.1855   | -28713.4316   |
+|  ss_n40C_1v40|-27.0853  | 1.1249  | -27.0853   | -21725.4824   |
+|  ss_n40C_1v44  |-22.7070  | 0.9909   | -22.7070  | -17801.5625  |
+|  ss_n40C_1v76     |-5.2654   | 0.5038   | -5.2654   | -3208.7793   |
+
+![Screenshot 2024-12-08 064226](https://github.com/user-attachments/assets/c2735063-c6c8-4a51-8f6a-2d17818fa2e5)
+
+![Screenshot 2024-12-08 065041](https://github.com/user-attachments/assets/769c8079-dfea-422e-8cc7-8e6240420b1b)
+
+![Screenshot 2024-12-08 065913](https://github.com/user-attachments/assets/fc904026-5a3c-4bca-8e41-1624474f4852)
+
+![Screenshot 2024-12-08 070712](https://github.com/user-attachments/assets/6daea128-878b-4286-96ab-08ea7bdd3b83)
