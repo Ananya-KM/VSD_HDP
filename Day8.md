@@ -41,3 +41,52 @@ The **delay table values** are obtained from **SPICE simulations**, which are al
 ![Screenshot 2024-12-12 011511](https://github.com/user-attachments/assets/6e95eb5f-f13f-43ee-b632-1be67fab1c62)
 ### NMOS Resistive and Saturation Regions of Operation
 Resistive region of operation with small drain-source voltage
+![Screenshot 2024-12-12 011536](https://github.com/user-attachments/assets/47aec678-7c37-48ec-b10c-37915e023577)
+![Screenshot 2024-12-12 011613](https://github.com/user-attachments/assets/a12d1f14-1dfa-45b5-9d05-f1eb133ed09c)
+**Drift Current**: Current caused by a potential difference across the material.  
+**Diffusion Current**: Current resulting from a difference in carrier concentration.  
+**Cox**: A constant value provided by the foundry, representing oxide capacitance.
+![Screenshot 2024-12-12 011626](https://github.com/user-attachments/assets/ba5e7f84-ca44-4a6c-9b77-8551006c659e)
+![Screenshot 2024-12-12 011642](https://github.com/user-attachments/assets/a7661c83-b46e-42d9-9b2b-069786ebf898)
+#### Drain current model for linear region of operation
+![Screenshot 2024-12-12 011652](https://github.com/user-attachments/assets/3ff39b7f-8710-4a6e-b7a4-c50370488285)
+![Screenshot 2024-12-12 011710](https://github.com/user-attachments/assets/b157e9df-db88-4289-9634-7ad4341a4d1b)
+![Screenshot 2024-12-12 011723](https://github.com/user-attachments/assets/601b8cfd-acc6-4aa2-8df8-076df0eb9062)
+
+**SPICE Conclusion to Resistive Operation**:  
+SPICE simulations allow us to calculate the **drain current (Id)** for different **Vgs** values by sweeping **Vds** for each **Vgs** until **Vgs - Vt** is reached. This helps in generating accurate **Id-Vds** curves and understanding the transistor's behavior.
+
+**Saturation Region/Pinch-off Region Condition**:  
+In the saturation (or pinch-off) region, the drain current **Id** becomes independent of **Vds** and depends only on **Vgs**, as long as **Vds ≥ Vgs - Vt**. This is where the transistor is fully "on" and conducting.
+
+![Screenshot 2024-12-12 011739](https://github.com/user-attachments/assets/67f73504-79b1-4c3b-838e-e4b7fb773fd9)
+![Screenshot 2024-12-12 011812](https://github.com/user-attachments/assets/30ef8329-e4fa-4400-9050-f12202c6a03e)
+![Screenshot 2024-12-12 011837](https://github.com/user-attachments/assets/c46a22df-049b-40d5-af77-9ecf4325c723)
+![Screenshot 2024-12-12 011846](https://github.com/user-attachments/assets/42bf30ca-e741-46c0-8be4-a4a91d58ad06)
+![Screenshot 2024-12-12 011901](https://github.com/user-attachments/assets/1307efa5-544f-4630-ad70-6e8ffa7fbfdc)
+
+**SPICE Conclusion to Resistive Operation**:  
+SPICE simulations allow us to calculate the **drain current (Id)** for different **Vgs** values by sweeping **Vds** for each **Vgs** until **Vgs - Vt** is reached. This helps in generating accurate **Id-Vds** curves and understanding the transistor's behavior.
+
+**Saturation Region/Pinch-off Region Condition**:  
+In the saturation (or pinch-off) region, the drain current **Id** becomes independent of **Vds** and depends only on **Vgs**, as long as **Vds ≥ Vgs - Vt**. This is where the transistor is fully "on" and conducting.
+
+![Screenshot 2024-12-12 011912](https://github.com/user-attachments/assets/d18f4224-e669-458b-9ebf-f58ecbb5a635)
+![Screenshot 2024-12-12 011921](https://github.com/user-attachments/assets/24495c06-a43f-4c90-8dac-2d192d7101c8)
+**SPICE Netlist Example**:  
+
+- **M1 vdd n1 0 0 nmos W=1.8u L=1.2u**: Defines an **NMOS** transistor with gate width 1.8µ and length 1.2µ, connecting **vdd** (drain), **n1** (gate), **0** (source and substrate).  
+- **R1 in n1 55**: Defines a **resistor** with value 55Ω between **in** and **n1**.  
+- **Vdd vdd 0 2.5**: Defines a **voltage source** of 2.5V between **vdd** and ground (0).  
+- **Vin in 0 2.5**: Defines an **input voltage source** of 2.5V between **in** and ground (0).  
+
+This structure is used to describe circuit components and connections for simulation.
+![Screenshot 2024-12-12 011936](https://github.com/user-attachments/assets/9390da37-d99d-49f5-a64d-b2d3e24e9cea)
+#### Model to get NMOS
+![Screenshot 2024-12-12 011947](https://github.com/user-attachments/assets/b9584758-fc89-4fd9-a67a-2f3648c25d66)
+![Screenshot 2024-12-12 012002](https://github.com/user-attachments/assets/0a50ce1c-e003-43ce-adfb-1fd10313bf10)
+
+
+
+
+
