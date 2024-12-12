@@ -21,5 +21,23 @@ These waveforms help us measure things like **delay**. By tweaking the design pa
  The difference between **CBUF1** and **CBUF2** comes from their **circuit design**, which might have different **drive strengths** or **W/L ratios** (transistor width-to-length).  
 
 The **delay table values** are obtained from **SPICE simulations**, which are also used to verify delays for the circuit design.
+### Introduction to Basic Element in Circuit Design - NMOS Transistor
+**NMOS Transistor**: An N-type Metal-Oxide-Semiconductor that conducts when a positive voltage is applied to its gate, enabling current flow from drain to source.
+ ![Screenshot 2024-12-12 011430](https://github.com/user-attachments/assets/7124668a-4be3-4dfb-a1ba-b7f5f348a8ff)
+**Threshold Voltage**: A key parameter that drives SPICE simulations, representing the voltage at which a transistor switches from off to on.  
 
- 
+**Strong Inversion**: The condition where the transistor channel is fully formed, allowing significant current flow.  
+
+**Threshold Voltage with Substrate Potential**: The threshold voltage varies with changes in substrate potential due to the **body effect**.
+![Screenshot 2024-12-12 011439](https://github.com/user-attachments/assets/a90c6c53-42f2-4c32-9928-1caf35716a5a)
+![Screenshot 2024-12-12 011448](https://github.com/user-attachments/assets/9565b439-4a9c-43ff-944d-dba11e2fb051)
+##### Consider potential to Body terminal
+![Screenshot 2024-12-12 011455](https://github.com/user-attachments/assets/32b8f4c6-5321-4385-8e19-2801ff3262d9)
+![Screenshot 2024-12-12 011505](https://github.com/user-attachments/assets/8672e881-ba44-429c-9ac9-e79acb339942)
+
+**Threshold Voltage at Vsb = 0**: The threshold voltage when the source-to-body voltage is zero.  
+
+**Body Effect Coefficient and Fermi Potential**: Constants provided by the foundry that form the transistor model and are fed into SPICE simulations for various calculations.
+![Screenshot 2024-12-12 011511](https://github.com/user-attachments/assets/6e95eb5f-f13f-43ee-b632-1be67fab1c62)
+### NMOS Resistive and Saturation Regions of Operation
+Resistive region of operation with small drain-source voltage
