@@ -13,3 +13,4 @@
 ### DAY 5 - VSD BabySOC Modelling
 ### DAY 6 - GLS for BabySOC
 ### DAY 7 - PVT Corner Analysis using OpenSTA
+### DAY 8 - INTRODUCTION TO CIRCUIT DESIGN AND SPICE SIMUATIONS
