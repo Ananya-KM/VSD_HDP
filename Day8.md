@@ -86,6 +86,69 @@ This structure is used to describe circuit components and connections for simula
 ![Screenshot 2024-12-12 011947](https://github.com/user-attachments/assets/b9584758-fc89-4fd9-a67a-2f3648c25d66)
 ![Screenshot 2024-12-12 012002](https://github.com/user-attachments/assets/0a50ce1c-e003-43ce-adfb-1fd10313bf10)
 
+# LABS
+**1. Introduction to SPICE**
+
+SPICE (Simulation Program with Integrated Circuit Emphasis) is a powerful tool used for simulating the behavior of electronic circuits. It allows circuit designers to analyze and validate designs before fabrication by providing insights into performance metrics such as voltage, current, and power consumption.
+
+**SPICE Lab with Sky130 Models**
+
+To use SPICE with Sky130 technology, you can clone the relevant GitHub repository containing Sky130 models and circuits for simulation.
+
+- **Clone the repo**:  
+  Clone the repository with the following command:  
+  ```bash
+  git clone https://github.com/kunalg123/sky130CircuitDesignWorkshop.git
+  ```
+
+**3 Important Files in the Repo**:
+
+1. **`/sky130CircuitDesignWorkshop/design/sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.pm3.spice`**  
+   This file contains the SPICE model for the **NFET (N-channel MOSFET)** in the Sky130 process at typical (tt) conditions.
+
+2. **`/sky130CircuitDesignWorkshop/design/sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice`**  
+   This file provides the corner model for the **NFET**, used for simulating different process variations.
+
+3. **`/sky130CircuitDesignWorkshop/design/sky130_fd_pr/models/sky130.lib.pm3.spice`**  
+   This library file contains all the **SPICE models** for components in the Sky130 process node.
+
+You can download ngspice for Windows from the official source using the following link:
+
+[ngspice Downloads - SourceForge](http://ngspice.sourceforge.net/download.html)
+### EXAMPLE
+    
+    *Model Description
+    .param temp=27
+
+    *Including sky130 library files
+    .lib "sky130_fd_pr/models/sky130.lib.spice" tt
+
+    *Netlist Description
+     XM1 Vdd n1 0 0 sky130_fd_pr__nfet_01v8 w=5 l=2
+     R1 n1 in 55
+     Vdd vdd 0 1.8V
+     Vin in 0 1.8V
+
+    *simulation commands
+    .op
+    .dc Vdd 0 1.8 0.1 Vin 0 1.8 0.2
+
+    .control
+
+     run
+     display
+    setplot dc1
+    .endc
+    .end
+
+### To plot the waveforms in ngspice
+    ngspice day1_nfet_idvds_L2_W5.spice
+    plot -vdd#branch
+
+### The plot of Ids vs Vds over constant Vgs:
+![WhatsApp Image 2024-12-10 at 9 31 06 PM](https://github.com/user-attachments/assets/5b9a1024-cd61-428c-919c-af8bfdbf694d)
+![WhatsApp Image 2024-12-10 at 9 31 06 PM (2)](https://github.com/user-attachments/assets/99893245-4e92-48f1-83a1-f66699612970)
+![WhatsApp Image 2024-12-10 at 9 31 06 PM (1)](https://github.com/user-attachments/assets/718c78cf-4b07-49fd-b774-913e2e19d72f)
 
 
 
