@@ -56,5 +56,63 @@ In the **velocity-saturated** case, the **switching threshold (Vm)** is the poin
 ![Screenshot 2024-12-13 004125](https://github.com/user-attachments/assets/5c1f76b4-c628-4c1a-99b6-a284ddd10546)
 ![Screenshot 2024-12-13 004137](https://github.com/user-attachments/assets/3e8d32f4-0f22-481c-813f-3c5dcbfa747b)
 ![Screenshot 2024-12-13 004148](https://github.com/user-attachments/assets/354c9277-12c2-45b0-b4af-2f20acf4d2e6)
+# LABS
+## 1. Voltage transfer characteristics: SPICE simulations
+#### Sky130 SPICE simulation for CMOS - VTC
+     *Model Description
+     .param temp=27
 
+      *Including sky130 library files
+      .lib "sky130_fd_pr/models/sky130.lib.spice" tt
 
+      *Netlist Description
+       XM1 out in vdd vdd sky130_fd_pr__pfet_01v8 w=0.84 l=0.15
+       XM2 out in 0 0 sky130_fd_pr__nfet_01v8 w=0.36 l=0.15
+       Cload out 0 50fF
+       Vdd vdd 0 1.8V
+       Vin in 0 1.8V
+
+       *simulation commands
+        .op
+       .dc Vin 0 1.8 0.01
+
+        .control
+         run
+        setplot dc1
+        display
+        .endc
+        .end
+        
+![WhatsApp Image 2024-12-12 at 10 59 21 PM](https://github.com/user-attachments/assets/e5b60ff6-bc40-47f8-bedd-d0e1f406fae6)
+![WhatsApp Image 2024-12-12 at 10 59 21 PM (1)](https://github.com/user-attachments/assets/1d249ffe-65a4-4f87-a632-1c8114f4ff69)
+
+- **Switching Threshold (VM):**  
+  The input voltage (**Vin**) at which the output voltage (**Vout**) equals the input voltage.  
+  - It is the intersection point on the Voltage Transfer Curve (VTC).  
+  - Also referred to as the **midpoint voltage** of the CMOS inverter.
+
+  ### Sky130 SPICE simulation for CMOS - Transient Analysis
+      *Model Description
+       .param temp=27
+
+      *Including sky130 library files
+        .lib "sky130_fd_pr/models/sky130.lib.spice" tt
+
+        *Netlist Description
+         XM1 out in vdd vdd sky130_fd_pr__pfet_01v8 w=0.84 l=0.15
+         XM2 out in 0 0 sky130_fd_pr__nfet_01v8 w=0.36 l=0.15
+         Cload out 0 50fF
+         Vdd vdd 0 1.8V
+         Vin in 0 PULSE(0V 1.8V 0 0.1ns 0.1ns 2ns 4ns)
+
+         *simulation commands
+         .tran 1n 10n
+         .control
+          run
+          .endc
+          .end
+  
+  ![WhatsApp Image 2024-12-12 at 10 59 17 PM](https://github.com/user-attachments/assets/bad784a5-848a-4190-a74f-bd70ce13cf5d)
+  ![WhatsApp Image 2024-12-12 at 10 59 18 PM](https://github.com/user-attachments/assets/7a95401c-8491-4a4d-ac4f-b3cc1dc7ebc5)
+- **Propagation Delay:**  
+  The time difference (measured at 50% of input-output transition) between the input signal change and the corresponding output signal switch in a logic gate (e.g., inverter).
