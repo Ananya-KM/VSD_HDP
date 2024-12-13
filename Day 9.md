@@ -60,3 +60,66 @@ In MOS devices, **Rp** (PMOS) and **Rn** (NMOS) act as **non-linear resistors**,
 - **Merge the PMOS and NMOS load curves** by combining their drain current (Ids) characteristics with respect to **Vout**.  
 - **Plot the Voltage Transfer Characteristic (VTC)** by mapping **Vout** against **Vin**, showing the transition from low to high output voltage.
 ![Screenshot 2024-12-12 222852](https://github.com/user-attachments/assets/7125ef9e-5f05-4ba2-9b58-7cf8269e41df)
+
+# LABS
+## SPICE simulation for lower nodes and velocity saturation effect
+#### Sky130 Id-Vgs
+##### EXAMPLE 1
+      *Model Description
+      .param temp=27
+
+      *Including sky130 library files
+      .lib "sky130_fd_pr/models/sky130.lib.spice" tt
+
+      *Netlist Description
+       XM1 Vdd n1 0 0 sky130_fd_pr__nfet_01v8 w=0.39 l=0.15
+       R1 n1 in 55
+       Vdd vdd 0 1.8V
+       Vin in 0 1.8V
+
+      *simulation commands
+       .op
+       .dc Vdd 0 1.8 0.1 Vin 0 1.8 0.2
+
+       .control
+
+       run
+       display
+       setplot dc1
+       .endc
+       .end
+
+#### The plot of Ids vs Vds over constant Vgs:
+![WhatsApp Image 2024-12-12 at 6 12 00 AM (2)](https://github.com/user-attachments/assets/6bb17e94-6efa-45e4-8f55-7e4bb8f7fe51)
+![WhatsApp Image 2024-12-12 at 6 12 01 AM](https://github.com/user-attachments/assets/f873345a-9f1f-4848-8f94-cd86d104554b)
+
+##### EXAMPLE 2
+      *Model Description
+       .param temp=27
+
+       *Including sky130 library files
+       .lib "sky130_fd_pr/models/sky130.lib.spice" tt
+
+       *Netlist Description
+        XM1 Vdd n1 0 0 sky130_fd_pr__nfet_01v8 w=0.39 l=0.15
+        R1 n1 in 55
+        Vdd vdd 0 1.8V
+        Vin in 0 1.8V
+
+        *simulation commands
+         .op
+        .dc Vin 0 1.8 0.1 
+
+        .control
+
+         run
+         display
+         setplot dc1
+         .endc
+         .end
+####  The plot of Ids vs Vgs over constant Vds:
+![WhatsApp Image 2024-12-12 at 6 12 00 AM (1)](https://github.com/user-attachments/assets/7fdd6cf7-680e-4ac3-a27f-0afe30c417a8)
+![WhatsApp Image 2024-12-12 at 6 12 00 AM](https://github.com/user-attachments/assets/a6789ed4-1278-4d7e-8b7c-810556929139)
+
+
+
