@@ -57,6 +57,28 @@
 ### Sources of variation: Oxide Thickness
 ![Screenshot 2024-12-14 064317](https://github.com/user-attachments/assets/011ff2a9-1203-4501-a5ca-5c8d8f68d536)
 ![Screenshot 2024-12-14 064325](https://github.com/user-attachments/assets/f78cebab-3c33-45d5-af1f-7b3d1d6276b1)
+# LABS
+## Static behavior evaluation: CMOS inverter robustness, Power supply variation
+### Smart SPICE simulation for power supply variations
+
+![WhatsApp Image 2024-12-14 at 5 54 28 AM (1)](https://github.com/user-attachments/assets/6e264a52-15c6-4a99-a603-692e9b51b689)
+![WhatsApp Image 2024-12-14 at 5 54 28 AM](https://github.com/user-attachments/assets/6d89ba5d-aa04-42e6-b895-c2253399447c)
 
 
+### **CMOS Inverter Robustness: Extreme Device Width Variation**
 
+- **Robustness to Width Variation:**  
+   The CMOS inverter remains functional even under extreme variations in device width (W) due to its static behavior properties.  
+
+- **Effect on Switching Threshold:**  
+   Large deviations in device width primarily affect the switching threshold \( V_M \) but do not drastically impact the inverter's ability to operate as a logic gate.  
+
+- **Impact on Noise Margins:**  
+   Variations in width cause asymmetry in the noise margins, with one margin (high or low) reducing while the other increases.
+
+- **Key Insight:**  
+   The CMOS inverter exhibits robust static behavior, tolerating extreme width variations without functional failure.
+
+![Screenshot 2024-12-14 064110](https://github.com/user-attachments/assets/2ff1be23-c941-4053-bac2-caa191f08308)
+![WhatsApp Image 2024-12-14 at 5 54 29 AM](https://github.com/user-attachments/assets/ebc534a4-d0fc-42c4-916f-bc564a118478)
+![WhatsApp Image 2024-12-14 at 5 54 29 AM (1)](https://github.com/user-attachments/assets/eb560b25-1bbc-4e88-b2f7-d3af78af9d54)
