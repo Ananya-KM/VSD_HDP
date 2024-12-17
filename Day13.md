@@ -32,13 +32,13 @@
 
 
 #### **5. Run the OpenROAD Flow**  
-
+       cd flow
        make
 
 ![WhatsApp Image 2024-12-17 at 8 48 24 AM](https://github.com/user-attachments/assets/9554cf56-e6bf-44f1-8096-80c0b4c48777)
 
 ##### 3. Launch the graphical user interface (GUI) to visualize the final layout:  
-  make gui_final
+      make gui_final
   
  ![WhatsApp Image 2024-12-17 at 8 48 23 AM](https://github.com/user-attachments/assets/7ca2908e-2434-4ecf-b0ce-f6e30055eec2)
 #### directory structure
