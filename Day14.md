@@ -38,7 +38,8 @@
 4. **Create Config File:**
    - Create a `config.mk` file in `sky130hd/vsdbabysoc` with the required configuration details. 
    ##### the file details are given below
-          #Design and Platform Configuration
+   
+         # Design and Platform Configuration
           export DESIGN_NICKNAME = vsdbabysoc
           export DESIGN_NAME = vsdbabysoc
           export PLATFORM    = sky130hd
