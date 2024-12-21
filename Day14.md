@@ -77,7 +77,7 @@
         # Clock Configuration
           export CLOCK_PORT = CLK
           export CLOCK_NET  = $(CLOCK_PORT)
-       # export CLOCK_PERIOD = 20.0
+          export CLOCK_PERIOD = 20.0
 
        # Floorplanning Configuration
          export DIE_AREA   = 0 0 1600 1600
