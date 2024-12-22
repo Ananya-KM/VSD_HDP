@@ -7,16 +7,21 @@
     |   ├── jenkins          
     │   ├── tools           
     │   ├── etc              
-    │   ├── setup_env.sh    
+    │   ├── setup.sh    
+    
+![WhatsApp Image 2024-12-21 at 10 16 03 AM](https://github.com/user-attachments/assets/c260f6c1-5f97-4f07-919e-ca32e007d032)
+
 
  ### Now go to flow directory
      ├── flow           
-     │   ├── design          
+     │   ├── designs         
      │   ├── makefile       
-     │   ├── platform         
+     │   ├── platforms         
      |   ├── tutorials        
      │   ├── util            
-     │   ├── scripts             
+     │   ├── scripts    
+     
+![WhatsApp Image 2024-12-21 at 10 16 03 AM (1)](https://github.com/user-attachments/assets/f8c28755-2d84-4a1e-9e5c-f5679dd2485d)
 
   ###  RTL2GDS Flow for VSDBabySoC: Initial Steps 
 
@@ -103,26 +108,45 @@
    #### Commands for synthesis:
          make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk synth
    
+ ![WhatsApp Image 2024-12-21 at 10 15 59 AM](https://github.com/user-attachments/assets/ac0c1ca4-43ba-4c0f-b274-a9e2990174ad)
+ ![WhatsApp Image 2024-12-21 at 10 15 59 AM (3)](https://github.com/user-attachments/assets/6a965abf-99fa-41d2-9df4-271f6682a3c7)
 
    #### Synthesis netlist
+![WhatsApp Image 2024-12-21 at 10 19 26 PM](https://github.com/user-attachments/assets/9858668a-4b9e-469e-a44d-3e6a0ad90d94)
 
    #### Synthesis log:
+![WhatsApp Image 2024-12-21 at 10 15 59 AM (4)](https://github.com/user-attachments/assets/dace679d-b01d-4b8c-a82d-182ef230f5cc)
+![WhatsApp Image 2024-12-21 at 10 15 59 AM (1)](https://github.com/user-attachments/assets/8bd1e399-d26f-4140-9d50-426fdfb6d894)
+
+   #### Synthesis results:
+![WhatsApp Image 2024-12-21 at 10 15 59 AM (6)](https://github.com/user-attachments/assets/4211eea8-f561-42c0-9c06-0bd35e19921c)
 
    #### Commands for floorplan:
         make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
+![WhatsApp Image 2024-12-21 at 10 15 59 AM (1)](https://github.com/user-attachments/assets/0ab187cd-67a8-4f19-bbe2-329bb2a5aa6d)
+![WhatsApp Image 2024-12-21 at 10 15 59 AM](https://github.com/user-attachments/assets/8ede60ce-24d8-4f5a-9a5d-37dd3d0b87c2)
 
   
    #### Command for floorplan gui
          make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
+![WhatsApp Image 2024-12-21 at 10 15 59 AM (2)](https://github.com/user-attachments/assets/9530b0f0-c35c-40f3-af54-a69811f767ea)
 
-   
+   #### FLOORPLAN gui
+ ![WhatsApp Image 2024-12-21 at 10 15 59 AM (3)](https://github.com/user-attachments/assets/723feac5-cb40-4ec5-b40c-6e92183c44b0)
+
    #### Command for placement:
         make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk place
+![WhatsApp Image 2024-12-21 at 10 15 59 AM (4)](https://github.com/user-attachments/assets/d1b3f6da-52c4-4cef-bba6-8536f568a38e)
+![WhatsApp Image 2024-12-21 at 10 15 59 AM (5)](https://github.com/user-attachments/assets/54c33f4a-271f-4892-9097-b6d9f8a1eef7)
 
    #### Command for placement gui
         make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_place
+        
+![WhatsApp Image 2024-12-21 at 10 30 15 PM](https://github.com/user-attachments/assets/01055240-51c0-4f4b-986a-c2a6e16ca69e)
 
+   #### PLACEMENT gui
+![WhatsApp Image 2024-12-21 at 10 15 59 AM (6)](https://github.com/user-attachments/assets/24f53c56-032e-456a-8aa2-88a719782cb3)
 
    #### HEATMAP:
-        
-     
+![WhatsApp Image 2024-12-21 at 10 15 59 AM (7)](https://github.com/user-attachments/assets/a70c100d-f324-4c92-bb07-7567201a36e7)
+
