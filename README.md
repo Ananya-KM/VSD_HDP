@@ -3,8 +3,8 @@
 # CONTENTS 
 ### DAY 0 - Introduction to Digital VLSI SOC design and planning.
 ### DAY 1 - Tools installation 
- ### 1.Yosys
- ### 2.iverilog 
+ ### 1. Yosys
+ ### 2. iverilog 
  ### 3. GTKwave
 ### DAY 1_labs - Introduction to Verilog RTL Design and Synthesis.
 ### DAY 2 - Timing,Libraries,hirrarchial vs flat Synthesis and effecient flat top coding styles.
