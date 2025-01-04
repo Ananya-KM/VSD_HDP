@@ -19,4 +19,5 @@
 ### DAY 11 - CMOS NOISE MARGIN ROBUSTNESS EVALUATION
 ### DAY 12 - CMOS POWER SUPPLY AND DEVICE VARIATION ROBUSTNESS EVALUATION
 ### DAY 13 - OpenRoad Installation Guide
-### DAY 14 - unable to write SPEF file
+### DAY 14 - Floorplan and Placement of VSDBabySoC
+### DAY 15 - unable to write SPEF file
