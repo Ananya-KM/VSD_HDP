@@ -118,8 +118,11 @@
 ![WhatsApp Image 2024-12-21 at 10 15 59 AM (4)](https://github.com/user-attachments/assets/dace679d-b01d-4b8c-a82d-182ef230f5cc)
 ![WhatsApp Image 2024-12-21 at 10 15 59 AM (1)](https://github.com/user-attachments/assets/8bd1e399-d26f-4140-9d50-426fdfb6d894)
 
-   #### Synthesis results:
-![WhatsApp Image 2024-12-21 at 10 15 59 AM (6)](https://github.com/user-attachments/assets/4211eea8-f561-42c0-9c06-0bd35e19921c)
+   #### Synthesis check:
+![WhatsApp Image 2025-01-04 at 8 39 08 AM (2)](https://github.com/user-attachments/assets/ceb54816-6f0d-468d-96ac-1c2c759eae8a)
+   #### synthesis stats:
+![WhatsApp Image 2025-01-04 at 8 39 08 AM](https://github.com/user-attachments/assets/b85c170a-1d25-43d8-ab72-4b8e9052ed43)
+![WhatsApp Image 2025-01-04 at 8 39 08 AM (1)](https://github.com/user-attachments/assets/f8351887-95ed-4ae1-b418-a21d3b270495)
 
    #### Commands for floorplan:
         make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
