@@ -39,8 +39,8 @@
 
 ##### 3. Launch the graphical user interface (GUI) to visualize the final layout:  
       make gui_final
-  
- ![WhatsApp Image 2024-12-17 at 8 48 23 AM](https://github.com/user-attachments/assets/7ca2908e-2434-4ecf-b0ce-f6e30055eec2)
+![WhatsApp Image 2025-01-04 at 8 39 05 AM (5)](https://github.com/user-attachments/assets/c22a4935-4792-4a7c-a014-c9db703eda0c)
+
 #### directory structure
 
 ![WhatsApp Image 2024-12-17 at 8 48 23 AM (1)](https://github.com/user-attachments/assets/7675831c-7afc-4fb4-b3a4-0433bb7d6f16)
