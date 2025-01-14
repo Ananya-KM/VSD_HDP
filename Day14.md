@@ -1,4 +1,4 @@
-# Floorplan And Placement of VSDBabySoC
+# Floorplan to Routing of VSDBabySoC
 ### Structure of OpenROAD-flow-scripts 
     ├── OpenROAD-flow-scripts             
     │   ├── docker           
@@ -148,8 +148,22 @@
 ![WhatsApp Image 2024-12-21 at 10 30 15 PM](https://github.com/user-attachments/assets/01055240-51c0-4f4b-986a-c2a6e16ca69e)
 
    #### PLACEMENT gui
+        make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_place
 ![WhatsApp Image 2024-12-21 at 10 15 59 AM (6)](https://github.com/user-attachments/assets/24f53c56-032e-456a-8aa2-88a719782cb3)
 
    #### HEATMAP:
 ![WhatsApp Image 2024-12-21 at 10 15 59 AM (7)](https://github.com/user-attachments/assets/a70c100d-f324-4c92-bb07-7567201a36e7)
 
+#### Command for CTS:
+     make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk cts
+![WhatsApp Image 2025-01-14 at 6 53 57 AM (2)](https://github.com/user-attachments/assets/aa347298-dc8f-4361-9819-c6f219d792a5)
+![WhatsApp Image 2025-01-14 at 6 53 57 AM (1)](https://github.com/user-attachments/assets/7fcab10c-8036-4b57-b77c-1b903fb937ae)
+
+#### CTS gui:
+     make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_cts
+![WhatsApp Image 2025-01-14 at 6 53 57 AM (3)](https://github.com/user-attachments/assets/3732ed47-bb6e-408a-ab0f-4738ce5bf2cf)
+![WhatsApp Image 2025-01-14 at 6 53 57 AM](https://github.com/user-attachments/assets/0c19d302-3623-4e18-beaa-844aecdb159a)
+
+#### Command for Routing:
+     make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk route
+![WhatsApp Image 2025-01-14 at 6 53 56 AM](https://github.com/user-attachments/assets/2f2b8d93-cd5b-46eb-98be-e0dedfceed11)
