@@ -20,4 +20,5 @@
 ### DAY 12 - CMOS POWER SUPPLY AND DEVICE VARIATION ROBUSTNESS EVALUATION
 ### DAY 13 - OpenRoad Installation Guide
 ### DAY 14 - Floorplan to Routing of VSDBabySoC
-### DAY 15 - SPEF extraction pending
+### DAY 15 - Generation of SPEF and Verilog files 
+### DAY 16 - Post-Placement STA and Timing Graphs with OpenSTA
