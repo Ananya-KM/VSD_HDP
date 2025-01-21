@@ -1,20 +1,47 @@
-# Extraction of SPEF and Verilog Files
-#### Step1: invoke OPENROAD
-#### Step2: Read lef files
-![WhatsApp Image 2025-01-04 at 8 39 05 AM](https://github.com/user-attachments/assets/b7dfd927-99dc-40b6-bd14-5ecf139b3831)
-#### Step3: Read lib files
-![WhatsApp Image 2025-01-04 at 8 39 05 AM (1)](https://github.com/user-attachments/assets/e4c40cd7-d223-4025-b791-8ec897491942)
-#### Step4: Read the def file
-![WhatsApp Image 2025-01-04 at 8 39 05 AM (2)](https://github.com/user-attachments/assets/3d1a5d87-8376-4ae8-b960-46a0469836cf)
-#### Step5: write spef file
-![WhatsApp Image 2025-01-07 at 9 40 52 AM](https://github.com/user-attachments/assets/79c6aa95-7cef-4303-aea1-10b47fb9b68d)
-#### unable to write spef_file
-#### tried with routing and then the routing step failed
-
-![WhatsApp Image 2025-01-04 at 8 39 05 AM (7)](https://github.com/user-attachments/assets/c6d318e3-1c39-44c7-9001-70d2e3ea0343)
-![WhatsApp Image 2025-01-04 at 8 39 05 AM (6)](https://github.com/user-attachments/assets/1a91ac2d-f865-4bb8-9a78-a8e68a76d9bd)
+# Extraction of SPEF and Verilog Files post Routing
+Here are the steps only until generating the post-placement Verilog file:
 
 
+
+### **Step 1: Launch OpenROAD**
+Start OpenROAD from your terminal:
+```bash
+openroad
+```
+
+---
+
+### **Step 2: Run the Commands in Sequence**
+
+#### **1. Read LEF Files**
+Load the technology and standard cell LEF files:
+```tcl
+read_lef /home/ananya123/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabysoc/lef/sky130hd.lef
+read_lef /home/ananya123/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabysoc/lef/avsdpll.lef
+read_lef /home/ananya123/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabysoc/lef/avsddac.lef
+```
+
+#### **2. Read Liberty File**
+Load the timing library:
+```tcl
+read_liberty /home/ananya123/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+
+#### **3. Read DEF File**
+Load the DEF file after the placement and routing stage:
+```tcl
+read_def /home/ananya123/OpenROAD-flow-scripts/flow/results/sky130hd/vsdbabysoc/base/5_route.def
+```
+
+#### **4. Write Post-Placement Verilog**
+Generate the Verilog netlist and save it:
+```tcl
+write_verilog /home/ananya123/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabysoc/vsdbabysoc_post_place.v
+```
+
+---
+
+These steps will guide you to generate the **post-placement Verilog file** successfully. Let me know if you need further assistance!
 
 
 
