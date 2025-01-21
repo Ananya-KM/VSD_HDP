@@ -1,5 +1,5 @@
-# Extraction of SPEF and Verilog Files Post_Routing
- steps only until generating the post-placement Verilog file:
+# Extraction SPEF and Verilog Files Post_Routing
+ ### Steps only until generating the post-placement Verilog file:
 
 
 
