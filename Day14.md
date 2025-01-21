@@ -148,7 +148,7 @@
 ![WhatsApp Image 2024-12-21 at 10 30 15 PM](https://github.com/user-attachments/assets/01055240-51c0-4f4b-986a-c2a6e16ca69e)
 
    #### PLACEMENT gui
-        make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_place
+       
 ![WhatsApp Image 2024-12-21 at 10 15 59 AM (6)](https://github.com/user-attachments/assets/24f53c56-032e-456a-8aa2-88a719782cb3)
 
    #### HEATMAP:
