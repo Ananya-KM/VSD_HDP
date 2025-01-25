@@ -22,3 +22,4 @@
 ### DAY 14 - Floorplan to Routing of VSDBabySoC
 ### DAY 15 - Generation of SPEF and Verilog files 
 ### DAY 16 - Post-Placement STA and Timing Graphs with OpenSTA
+### DAY 17 - Exploration of AutoTuner for VSDBabySoC
