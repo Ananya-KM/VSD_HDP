@@ -1,0 +1,2 @@
+# Autotuner Setup for VSDBabySoC
+AutoTuner in OpenROAD is a framework for optimizing physical design parameters to improve performance, power, and area (PPA) metrics. This setup integrates AutoTuner with VSDBabySoC, enabling automated tuning of design constraints using machine learning techniques. The process involves setting up dependencies, configuring the tuning environment, and running AutoTuner to analyze and optimize the SoC's placement and routing parameters.
