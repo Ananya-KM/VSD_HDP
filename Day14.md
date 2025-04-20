@@ -73,7 +73,7 @@
                                    $(vsdbabysoc_DIR)/lef/avsdpll.lef
 
          # Additional LIB Files
-         # export ADDITIONAL_LIBS = $(vsdbabysoc_DIR)/lib/avsddac.lib \
+          export ADDITIONAL_LIBS = $(vsdbabysoc_DIR)/lib/avsddac.lib \
                                    $(vsdbabysoc_DIR)/lib/avsdpll.lib
 
         # Pin Order and Macro Placement Configurations
